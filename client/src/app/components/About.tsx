@@ -7,19 +7,19 @@ export default function About() {
   return (
     <section
       id="about"
-      className="h-screen w-full bg-black flex items-center justify-center relative overflow-hidden px-4"
+      className="md:h-screen h-auto w-full bg-black flex items-center justify-center relative overflow-hidden px-4 py-12 md:py-0"
     >
       <div className="relative w-full max-w-3xl flex items-center justify-center  mt-16">
-        <div className="absolute w-[95%] h-[85%] bg-white/60 backdrop-blur-md rounded-2xl shadow-2xl border border-white/40 rotate-[-6deg] translate-x-5 translate-y-6" />
-        <div className="absolute w-[97%] h-[87%] bg-zinc-400 backdrop-blur-md rounded-2xl shadow-2xl border border-white/50 rotate-[4deg] -translate-x-5 translate-y-3" />
+        <div className="absolute w-[95%] h-[85%] bg-white/60 backdrop-blur-md rounded-2xl shadow-2xl border border-white/40 rotate-[-4deg] sm:rotate-[-6deg] translate-x-3 sm:translate-x-5 translate-y-4 sm:translate-y-6" />
+        <div className="absolute w-[97%] h-[87%] bg-zinc-400 backdrop-blur-md rounded-2xl shadow-2xl border border-white/50 rotate-[3deg] sm:rotate-[4deg] -translate-x-3 sm:-translate-x-5 translate-y-2 sm:translate-y-3" />
         {/* Top Paper with Spiral */}
         <div
-          className="relative  w-[92%] h-[86vh] max-h-[700px] 
-  rounded-3xl shadow-3xl border border-zinc-200 p-10 md:p-14 
+          className="relative  w-[92%] md:h-auto h-auto max-h-[700px] 
+  rounded-3xl shadow-3xl border border-zinc-200 p-8 md:p-14 
   flex flex-col justify-between z-20 overflow-hidden 
-  hover:bg-gradient-to-br from-blue-300 to-zinc-600 
+  md:hover:bg-gradient-to-br from-blue-300 to-zinc-600 
   transition-all duration-500 ease-out
-  hover:w-[96%] hover:h-[90vh]"
+  md:hover:w-[96%] md:hover:h-[90vh]"
         >
           {/* Spiral binding */}
           <div className="absolute left-15 top-4 h-full flex  justify-center space-x-13">
@@ -54,7 +54,7 @@ export default function About() {
           </h1>
 
           {/* Content */}
-          <div className="space-y-5 text-zinc-700 leading-relaxed text-lg md:text-xl font-light">
+          <div className="space-y-5 text-zinc-800 md:text-zinc-700 leading-relaxed text-base md:text-xl font-light">
             <p>
               Hello 👋 I’m{" "}
               <span className="font-semibold text-blue-600">
@@ -88,12 +88,12 @@ export default function About() {
           </div>
 
           {/* Signature */}
-          <div className="flex justify-end mt-10 text-right">
-            <div className="flex flex-col items-end">
-              <span className="italic text-zinc-600 text-sm mb-1">
+          <div className="flex justify-center md:justify-end mt-10 text-center md:text-right">
+            <div className="flex flex-col items-center md:items-end">
+              <span className="italic text-zinc-600 text-xs md:text-sm mb-1">
                 — Priyanshu Kumar
               </span>
-              <div className="w-28 h-[2px] bg-zinc-400 rounded-full" />
+              <div className="w-20 md:w-28 h-[2px] bg-zinc-400 rounded-full" />
             </div>
           </div>
         </div>

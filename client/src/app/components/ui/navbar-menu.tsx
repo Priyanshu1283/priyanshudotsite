@@ -19,7 +19,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white"
+        className="cursor-pointer text-white text-lg hover:opacity-[0.9]"
       >
         {item}
       </motion.p>
@@ -83,7 +83,7 @@ export const ProductItem = ({
         href={href}
         target={newTab ? "_blank" : "_self"}
         rel="noopener noreferrer"
-        className="block px-4 hover:bg-blue-300 rounded-md"
+        className="block px-4 hover:bg-blue-400 rounded-4xl text-white"
       >
         {description}
       </a>
@@ -91,9 +91,9 @@ export const ProductItem = ({
   }
 
   return (
-    <Link href={href} className="flex space-x-2 items-center block px-2 hover:bg-blue-300 rounded-4xl">
+    <Link href={href} className="flex space-x-2 items-center block px-2 hover:bg-blue-400 rounded-4xl">
       <div>
-        <p className="text-neutral-700 text-lg max-w-[10rem] dark:text-neutral-300">
+        <p className="text-white max-w-[10rem]">
           {description}
         </p>
       </div>
