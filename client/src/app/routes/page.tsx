@@ -8,9 +8,9 @@ export default function SparklesPreview() {
         <div className="h-40 w-40 flex flex-col justify-center items-center mb-8 r">
           {" "}
           <h6 className="mb-2 text-green-600 font-bold">Too Chalo fir..☕</h6>
-          <h6 className="font-sm text-sm">UPI: 8102346798@ptyes</h6>
+          <h6 className="font-sm text-sm text-white">UPI: 8102346798@ptyes</h6>
           <img className="rounded-md mb-2" src="/scan .jpg" alt="QR_Code" />
-          <h6 className="mb-8 text-sm">Priyanshu Kumar</h6>
+          <h6 className="mb-8 text-sm text-white">Priyanshu Kumar</h6>
         </div>
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}
