@@ -21,7 +21,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
-    "react-syntax-highlighter": "^13.5.3",
+    "react-syntax-highlighter": "^15.6.6",
     "refractor": "^5.0.0",
     "tailwind-merge": "^3.3.1"
   },

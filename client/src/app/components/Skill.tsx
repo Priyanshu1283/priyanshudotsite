@@ -2,7 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
 import { FaRegCopy } from "react-icons/fa";
 import TextType from "./ui/textType";
 import { cn } from "../lib/utils";
@@ -82,7 +83,7 @@ console.log("Hireable? " + (profile.hireable() ? "Yes" : "Maybe try again later.
         {/* Code section */}
         <SyntaxHighlighter
           language="javascript"
-          style={oneDark}
+          style={atomDark}
           customStyle={{
             background: "transparent",
             padding: "20px",
