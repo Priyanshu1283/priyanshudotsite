@@ -7,8 +7,8 @@ import { cn } from "@/lib/utils";
 export default function BackgroundBoxesDemo() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Piyanshu_0103EC221140.pdf"; 
-    link.download = "Piyanshu_0103EC221140.pdf"; // downloaded filename
+    link.href = "/Priyanshu_0103EC221140.pdf"; 
+    link.download = "Priyanshu_0103EC221140.pdf"; // downloaded filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
