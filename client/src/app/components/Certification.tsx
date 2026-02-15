@@ -36,29 +36,36 @@ export default function Certification() {
     },
     {
       quote:
-        "Ye wali certification Ind Gov krr waa reha tha too wahi se mine kr li. Q ki mi vii ECE background se hu to kr lia.",
+        "Proud to have completed my Internet of Things (IoT) certification. Gained strong knowledge of IoT architecture, sensors, communication protocols, and real-time data processing. Excited to apply these skills to build smart and connected solutions. 🚀",
       name: "IOT",
       designation: "By - PMKVY",
       src: "IOT.png",
     },
-     {
+    {
       quote:
-        "AgentForce vi Salesforce se related hai , jo ki ek exam me pass hone ke badd milta hai. Iska Exam thora tough hota hai, waise Online hi hota hai prr bitch-bitch me examener join krke pura room check krrtai hai.",
+        "Proud to have earned the Agentforce Specialist certification. This certification validates my ability to configure, customize, and optimize AI-powered agents within the Salesforce ecosystem. Excited to leverage these skills to build intelligent, automated, and customer-focused solutions. 🚀",
       name: "AgentForce",
-      designation: "VP of Technology at FutureNet",
+      designation: "By - Salesforce",
       src: "AgentForce.png",
+    },
+    {
+      quote:
+        "Proud to have earned the Salesforce Platform Developer I (PD1) certification. This credential validates my ability to build and deploy custom applications on the Salesforce Platform using Apex, SOQL, and Lightning Web Components. Excited to apply these skills to build scalable and efficient Salesforce solutions. 🚀",
+      name: "salesforce platform developer 1(PD1)",
+      designation: "By - Salesforce",
+      src: "Salesforce_PD1.png",
     }
   ];
   return (
     <div className="h-auto w-full">
-     <h1 className={cn("w-full flex justify-center text-[#0dd9e3ff] items-center py-12 text-5xl font-bold bg-black")}>
-      <TextType
-              text={["Certifications", "Achievements"," My Credentials"]}
-              typingSpeed={95}
-              pauseDuration={1500}
-              showCursor={true}
-              cursorCharacter="_" 
-            />
+      <h1 className={cn("w-full flex justify-center text-[#0dd9e3ff] items-center py-12 text-5xl font-bold bg-black")}>
+        <TextType
+          text={["Certifications", "Achievements", " My Credentials"]}
+          typingSpeed={95}
+          pauseDuration={1500}
+          showCursor={true}
+          cursorCharacter="_"
+        />
       </h1>
       <AnimatedTestimonials testimonials={testimonials} />
     </div>

@@ -27,12 +27,12 @@ export const MenuItem = ({
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          
+
         >
           {active === item && (
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
-             
+
                 layoutId="active" // layoutId ensures smooth animation
                 className="bg-black dark:bg-zinc-800 backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
@@ -61,7 +61,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.4] bg-black shadow-input flex items-center justify-center space-x-2 px-8 py-3 md:py-5 gap-6"
+      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.4] bg-black shadow-input flex flex-wrap items-center justify-center space-x-2 px-4 py-3 md:px-8 md:py-5 gap-2 md:gap-6"
     >
       {children}
     </nav>
@@ -71,7 +71,7 @@ export const Menu = ({
 export const ProductItem = ({
   description,
   href,
-  newTab ,
+  newTab,
 }: {
   description: string;
   href: string;

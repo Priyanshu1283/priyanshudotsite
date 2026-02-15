@@ -37,8 +37,8 @@ export default function ExpandableCardDemo() {
         <div className="w-full flex justify-center items-center py-12">
           <h2 className="text-6xl font-bold mt-12">
 
-           <TextType
-              text={["Projects", "My Works","Site Projects"]}
+            <TextType
+              text={["Projects", "My Works", "Site Projects"]}
               typingSpeed={95}
               pauseDuration={1500}
               showCursor={true}
@@ -243,7 +243,7 @@ const cards = [
     title: "Society Sync",
     src: "socySync.png",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://society-sync-neon.vercel.app/dashboard",
     content: () => {
       return (
         <p>
@@ -256,16 +256,16 @@ const cards = [
     },
   },
   {
-    description: "Chat Boat using OpenAI API",
-    title: "AI Boat",
-    src: "aiBoat.jpg",
+    description: "Weather App with AI",
+    title: "Weather Now",
+    src: "Weather.png",
     ctaText: "Visit",
-    ctaLink: "https://ai-chat-boat-green.vercel.app/",
+    ctaLink: "https://weather-now-ai-seven.vercel.app/",
     content: () => {
       return (
         <p>
-         Developing an AI Chat Boat using the OpenAI API involves creating an interactive chatbot that can engage in natural language conversations with users. <br /> 
-         This is achieved by sending user inputs to the OpenAI API, which processes the text and generates relevant responses based on the context of the conversation. 
+          Weather Now is a dynamic web application that leverages the OpenWeatherMap API to provide users with real-time weather information for locations around the world. <br />
+          The platform offers a user-friendly interface that allows users to search for cities and view detailed weather data including temperature, humidity, wind speed, and more.
         </p>
       );
     },

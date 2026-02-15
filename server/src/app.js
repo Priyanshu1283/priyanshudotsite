@@ -1,9 +1,14 @@
 import express from "express";
-import msgRoutes from "./routes/message.route.js";
+import cors from "cors";
+import msgRoutes from "./routes/contact.route.js"; // ✅ relative to src/
 
 const app = express();
 
+// Middleware
+app.use(cors());
 app.use(express.json());
-app.use("/messages", msgRoutes);
+
+// Routes
+app.use("/api/contact", msgRoutes);
 
 export default app;

@@ -14,7 +14,7 @@ export default function About() {
         <div className="absolute w-[97%] h-[87%] bg-zinc-400 backdrop-blur-md rounded-2xl shadow-2xl border border-white/50 rotate-[3deg] sm:rotate-[4deg] -translate-x-3 sm:-translate-x-5 translate-y-2 sm:translate-y-3" />
         {/* Top Paper with Spiral */}
         <div
-          className="relative  w-[92%] md:h-auto h-auto max-h-[700px] 
+          className="relative  w-[92%] md:h-[86vh] h-auto max-h-[700px] 
   rounded-3xl shadow-3xl border border-zinc-200 p-8 md:p-14 
   flex flex-col justify-between z-20 overflow-hidden 
   md:hover:bg-gradient-to-br from-blue-300 to-zinc-600 
