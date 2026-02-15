@@ -23,7 +23,8 @@ export default function Contact() {
     setResponse("");
 
     try {
-      //add local Host as well
+      //add local Host as well     
+
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
